@@ -13,7 +13,7 @@ export default function About() {
         <div className="grid grid-cols-2 py-5">
           <div className="px-22 py-5 flex items-center border-r-2">
             <img
-              src="./src/assets/myimg.jpg"
+              src="/assets/myimg.jpg"
               alt=""
               className="h-[27rem] w-[25rem] object-cover rounded-2xl"
             />

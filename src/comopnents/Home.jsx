@@ -19,7 +19,7 @@ export default function Home() {
     <div className="">
       <div>
         <img
-          src="./src/assets/portimg.png"
+          src="/assets/portimg.png"
           alt=""
           className="absolute h-[45vw] w-full object-cover"
         />
