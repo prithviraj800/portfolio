@@ -16,28 +16,27 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className="h-screen">
       <div>
         <img
           src="/assets/portimg.png"
           alt=""
-          className="absolute h-[45vw] w-full object-cover"
+          className="absolute md:h-[49vw] sm:h-[51vw] h-[38vw] w-full object-cover"
         />
       </div>
-      <div className="relative py-20 px-20 text-black">
-        <p className="text-4xl font-semibold">Hello, my name is</p>
+      <div className="relative md:py-20 sm:py-14 py-5 md:px-20 sm:px-10 px-6 text-black">
+        <p className="md:text-4xl sm:text-3xl text-lg  font-semibold">Hello, my name is</p>
         <TypeAnimation
-          className="text-white font-semibold"
-          sequence={["Prithviraj", 2000, "Prithviraj Chauhan", 2000, ""]}
+          className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-[2.5rem]"
+          sequence={["Prithviraj", 2000, "", 2000, ""]}
           wrapper="span"
           speed={50}
-          style={{ fontSize: "6em", display: "inline-block" }}
           repeat={Infinity}
         />
-        <div className="flex items-center gap-3">
-          <p className="text-5xl text-white">And I'm a</p>
+        <div className="flex items-center gap-2">
+          <p className="md:text-5xl sm:text-4xl text-xl text-white">And I'm a</p>
           <TypeAnimation
-            className="text-red-600"
+            className="text-red-600 md:text-5xl sm:text-4xl text-xl inline-block"
             sequence={[
               "Fresher",
               2000,
@@ -48,25 +47,25 @@ export default function Home() {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: "3em", display: "inline-block" }}
             repeat={Infinity}
           />
         </div>
-        <div className="pt-20">
-          <StyledWrapper>
-            <button onClick={scrollToBottom} className="btn-17">
-              <span className="text-container">
-                <span className="text">Hire me</span>
-              </span>
-            </button>
-          </StyledWrapper>
+        <div className="md:py-20 sm:py-8 py-5">
+
+        <StyledWrapper>
+      <button onClick={scrollToBottom}  className="btn md:w-[10rem] sm:w-[8rem] text-">Hair me</button>
+    </StyledWrapper>
+          
+          
         </div>
       </div>
-
-
-      <About />
+      {/* 
       <Skills />
-      <Project />
+      <Project /> */}
+      <div ref={bottomRef}>
+      <About />
+      </div>
+     
 
       {/* Contact Section (Attach Ref Here) */}
       <div ref={bottomRef}>
@@ -77,24 +76,100 @@ export default function Home() {
 }
 
 const StyledWrapper = styled.div`
-  .btn-17,
-  .btn-17 * {
-    border: 0 solid;
-    box-sizing: border-box;
-  }
-
-  .btn-17 {
-    background-color: #000;
-    color: #fff;
+  .btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
     cursor: pointer;
-    font-weight: 900;
-    border-radius: 99rem;
-    padding: 0.8rem 3rem;
-    transition: all 0.3s ease-in-out;
+    /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 0.5em 1.5em;
+    font-size: 14px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+      /* Top-left */ 0% var(--curve-size),
+      var(--curve-size) 0,
+      /* top-right */ 100% 0,
+      100% calc(100% - var(--curve-size)),
+      /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */ 0 100%
+    );
+    transition: color 250ms;
   }
 
-  .btn-17:hover {
-    background-color: #333;
+  .btn::after,
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
   }
-`;
 
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%;
+    }
+
+    50% {
+      background-position: 70% 100%;
+    }
+
+    100% {
+      background-position: 31% 0%;
+    }
+  }
+
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+      /* Top-left */ var(--border-width)
+        calc(var(--curve-size) + var(--border-width) * 0.5),
+      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+    );
+    transition: clip-path 500ms;
+  }
+
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+      /* Top-left */ calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      calc(100% - var(--border-width)) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width))
+    );
+    transition: 200ms;
+  }
+
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }`;

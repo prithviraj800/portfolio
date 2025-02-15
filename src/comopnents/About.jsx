@@ -1,17 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+
 export default function About() {
+
+  
   return (
-    <section>
-      <div className="bg-black text-white h-screen snap-center">
+    <section className="">
+      <div className="bg-black text-white  ">
         <div className="py-5">
-          <p className="text-center  font-bold text-3xl ">About me </p>
-          <p className="text-center  font-bold text-lg text">
+          <p className="text-center  font-bold md:text-3xl sm:text-2xl text-xl ">About me </p>
+          <p className="text-center  font-bold md:text-lg sm:text-lg text-xs text">
             -- <span className="text-red-500">who i am</span> --
           </p>
         </div>
-        <div className="grid grid-cols-2 py-5">
-          <div className="px-22 py-5 flex items-center border-r-2">
+        <div className="grid md:grid-cols-2 sm:grid-rows-2 py-5">
+          <div className="md:px-22 sm:px-42 px-24 py-5 flex items-center border-r-2">
             <img
               src="/assets/myimg.jpg"
               alt=""
@@ -22,7 +25,7 @@ export default function About() {
           <div className="pt-10 px-10  flex flex-col items-center">
             <div>
               <p className="py-2">I'm Prithviraj Chauhan and I'am a Fresher</p>
-              <p>
+              <p className="sm:text-lg text-xs">
               As a creative web developer, I specialize in HTML, CSS, Tailwind CSS, JavaScript, React, and Node.js. I seamlessly blend clean and semantic HTML with modern CSS and Tailwind CSS to craft visually appealing, responsive, and user-friendly web interfaces. My expertise in JavaScript and React.js enables me to build dynamic, interactive, and high-performance web applications that deliver a seamless user experience. On the backend, I leverage Node.js to develop scalable and efficient server-side solutions. With a deep passion for innovation and UI/UX design, I strive to create engaging, seamless, and modern digital experiences that push the boundaries of web development.
               </p>
             </div>
