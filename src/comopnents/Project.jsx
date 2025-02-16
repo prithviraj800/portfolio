@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 export default function Project() {
   return (
-    <div className=" text-white bg-black w-full h-screen snap-center">
+    <div className=" text-white bg-black w-full  snap-center">
        <div className="py-5">
        <p className="text-center font-bold text-3xl  ">My Project</p>
        <p className="font-semibold text-center">-- <span className="text-red-600 ">Projects done</span> --</p>
        </div>
-      <div className="flex justify-between px-20 py-18 ">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:px-20 sm:px-18 px-13 gap-5 py-18 ">
         <div>
           <a href="https://github.com/prithviraj800/ShopMe-Ecommerce">
             <StyledWrapper>
-              <div className="card-container">
+              <div className="card-container w-[10rem]">
                 <div className="card bg-black">
                   <div className="front-content">
                     <img
@@ -92,8 +92,8 @@ export default function Project() {
 
 const StyledWrapper = styled.div`
   .card-container {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0 10px px rgba(0, 0, 0, 0.2);

@@ -12,76 +12,76 @@ export default function Skills() {
   return (
     <div className="bg-black">
       <div className="py-5 text-white">
-        <p className="text-center  font-bold text-3xl ">Skills</p>
-        <p className="text-center  font-bold text-lg text">
+        <p className="text-center  font-bold md:text-3xl sm:text-2xl text-xl ">Skills</p>
+        <p className="text-center  font-bold md:text-lg sm:text-lg text-xs text">
           -- <span className="text-red-500">what i know</span> --
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-20 py-20 px-20">
+      <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-20 sm:gap-10 gap-5  md:py-20 sm:py-10 py-6 md:px-20 sm:px-12 px-10">
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem]  ">
               <h2 className="flex flex-col items-center w-20">
-                <FaHtml5 /> <span>HTML</span>
+                <FaHtml5 /> <span className="md:text-2xl sm:text-xl text-lg">HTML</span>
               </h2>
             </div>
           </StyledWrapper>
         </div>
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem] ">
               <h2 className="flex flex-col items-center w-20">
                 <IoLogoCss3 />
-                <span>CSS</span>{" "}
+                <span className="md:text-2xl sm:text-xl text-lg">CSS</span>
               </h2>
             </div>
           </StyledWrapper>
         </div>
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem] ">
               <h2 className="flex flex-col items-center w-20">
                 <BiLogoTailwindCss />
-                <span>Tailwindcss</span>
+                <span className="md:text-2xl sm:text-xl text-lg">Tailwindcss</span>
               </h2>
             </div>
           </StyledWrapper>
         </div>
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem] ">
               <h2 className="flex flex-col items-center w-20">
                 <IoLogoJavascript />
-                <span>JavaScript</span>
+                <span className="md:text-2xl sm:text-xl text-lg">JavaScript</span>
               </h2>
             </div>
           </StyledWrapper>
         </div>
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem] ">
               <h2 className="flex flex-col items-center w-20">
                 <FaReact />
-                <span>React</span>
+                <span className="md:text-2xl sm:text-xl text-lg">React</span>
               </h2>
             </div>
           </StyledWrapper>
         </div>
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem] ">
               <h2 className="flex flex-col items-center w-20">
                 <FaNodeJs />
-                <span>Nodejs</span>
+                <span className="md:text-2xl sm:text-xl text-lg">Nodejs</span>
               </h2>
             </div>
           </StyledWrapper>
         </div>
         <div>
           <StyledWrapper>
-            <div className="card">
+            <div className="card md:w-[14rem] md:h-[18rem] sm:w-[10rem] sm:h-[14rem] w-[8rem] h-[10rem] ">
               <h2 className="flex flex-col items-center w-20">
-                <SiMongodb /> <span>Mongodb</span>
+                <SiMongodb /> <span className="md:text-2xl sm:text-xl text-lg">Mongodb</span>
               </h2>
             </div>
           </StyledWrapper>
@@ -93,8 +93,8 @@ export default function Skills() {
 
 const StyledWrapper = styled.div`
   .card {
-    width: 190px;
-    height: 254px;
+   
+   
     background: #07182e;
     position: relative;
     display: flex;

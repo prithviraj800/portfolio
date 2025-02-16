@@ -59,12 +59,15 @@ export default function Home() {
           
         </div>
       </div>
-      {/* 
-      <Skills />
-      <Project /> */}
-      <div ref={bottomRef}>
+      
+      
+    
+      
       <About />
-      </div>
+      <Skills />
+        <Project />
+
+      
      
 
       {/* Contact Section (Attach Ref Here) */}
