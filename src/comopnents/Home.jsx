@@ -27,7 +27,7 @@ export default function Home() {
       <div className="relative md:py-20 sm:py-14 py-5 md:px-20 sm:px-10 px-6 text-black">
         <p className="md:text-4xl sm:text-xl text-xs  font-semibold">Hello, my name is</p>
         <TypeAnimation
-          className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-3xl"
+          className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-5xl"
           sequence={["Prithviraj", 2000, "", 2000, ""]}
           wrapper="span"
           speed={50}
