@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src="/portimg.png"
           alt=""
-          className="absolute md:h-[47vw] sm:h-[70vw] h-[50vw]  w-full object-cover"
+          className="absolute md:h-[47vw] sm:h-[70vw] h-[51.5vw]  w-full object-cover"
         />
       </div>
       <div className="relative md:py-20 sm:py-14 py-5 md:px-20 sm:px-10 px-6 text-black">
