@@ -6,7 +6,7 @@ export default function About() {
   
   return (
     <section className="">
-      <div className="bg-black text-white  ">
+      <div className="bg-black text-white h-auto ">
         <div className="py-5">
           <p className="text-center  font-bold md:text-3xl sm:text-2xl text-xl ">About me </p>
           <p className="text-center  font-bold md:text-lg sm:text-lg text-xs text">
