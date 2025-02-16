@@ -25,7 +25,9 @@ export default function Home() {
         />
       </div>
       <div className="relative md:py-20 sm:py-14 py-5 md:px-20 sm:px-10 px-6 text-black">
-        <p className="md:text-4xl sm:text-xl text-xs  font-semibold">Hello, my name is</p>
+        <p className="md:text-4xl sm:text-xl text-xs  font-semibold">
+          Hello, my name is
+        </p>
         <TypeAnimation
           className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-3xl"
           sequence={["Prithviraj", 2000, "", 2000, ""]}
@@ -34,7 +36,9 @@ export default function Home() {
           repeat={Infinity}
         />
         <div className="flex items-center gap-2">
-          <p className="md:text-5xl sm:text-4xl text-sm text-white">And I'm a</p>
+          <p className="md:text-5xl sm:text-4xl text-sm text-white">
+            And I'm a
+          </p>
           <TypeAnimation
             className="text-red-600 md:text-5xl sm:text-4xl text-sm inline-block"
             sequence={[
@@ -51,21 +55,24 @@ export default function Home() {
           />
         </div>
         <div className="md:py-20 sm:py-8 py-5">
-
-        <StyledWrapper>
-      <button onClick={scrollToBottom}  className="btn mdxs:w-[10rem] sm:w-[8rem] w-[6rem] sm:text-lg text-xs ">Hair me</button>
-    </StyledWrapper>
-          
-          
+          <div className="sm:pt-5 mt-3">
+            <StyledWrapper>
+              <button
+                onClick={scrollToBottom}
+                className="btn mdxs:w-[10rem] sm:w-[8rem] w-[6rem] sm:text-lg text-xs  "
+              >
+                Hair me
+              </button>
+            </StyledWrapper>
+          </div>
         </div>
       </div>
       {/* 
       <Skills />
       <Project /> */}
       <div ref={bottomRef}>
-      <About />
+        <About />
       </div>
-     
 
       {/* Contact Section (Attach Ref Here) */}
       <div ref={bottomRef}>
@@ -172,4 +179,5 @@ const StyledWrapper = styled.div`
 
   .btn:where(:hover, :focus) {
     color: #fff;
-  }`;
+  }
+`;
