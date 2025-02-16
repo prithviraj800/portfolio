@@ -13,12 +13,12 @@ export default function About() {
             -- <span className="text-red-500">who i am</span> --
           </p>
         </div>
-        <div className="grid md:grid-cols-2 sm:grid-rows-2 py-5">
-          <div className="md:px-22 sm:px-42 px-24 py-5 flex items-center border-r-2">
+        <div className="grid md:grid-cols-2 sm:grid-rows-2 py-3 ">
+          <div className="md:px-22 sm:px-42 px-16 py-4 flex items-center md:border-r-2 sm:border-none border-none">
             <img
-              src="/assets/myimg.jpg"
+              src="/myimg.jpg"
               alt=""
-              className="h-[27rem] w-[25rem] object-cover rounded-2xl"
+              className="sm:h-[27rem] sm:w-[25rem] w-[12rem]  object-cover rounded-2xl"
             />
           </div>
 
@@ -32,7 +32,7 @@ export default function About() {
 
             <div className="items-center pt-10">
               <StyledWrapper>
-                <a href="./src/assets/prithviraj_cv.pdf" download="prithviraj_cv">
+                <a href="/prithviraj_cv.pdf" download="prithviraj_cv">
                   <button>Download CV</button>
                 </a>
               </StyledWrapper>

@@ -10,12 +10,12 @@ import styled from 'styled-components';
 export default function App() {
   return (
     <Router>
-      <section className=" bg-black  h-scree">
+      <section className=" bg-black  ">
         <div>
-          <div className="flex w-full  justify-between md:px-20 sm:px-10 px-7 py-5 backdrop-blur-sm shadow-gray-500  text-white md:text-xl font-bold font-serif">
+          <div className="flex w-full  justify-between md:px-20 sm:px-10 px-7 md:py-5 sm:py-3 py-2 backdrop-blur-sm shadow-gray-500  text-white md:text-xl font-bold font-serif">
             <div>
               <Link to="/">
-                <p>Prithviraj</p>
+                <p className="sm:text-lg text-sm">Prithviraj</p>
               </Link>
             </div>
             <div className="">
