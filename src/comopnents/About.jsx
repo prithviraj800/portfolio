@@ -14,11 +14,11 @@ export default function About() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-rows-2 py-3 ">
-          <div className="md:px-22 sm:px-42 px-22 py-4 flex items-center md:border-r-2 sm:border-none border-none">
+          <div className="md:px-22 sm:px-42 px-5 py-4 flex items-center md:border-r-2 sm:border-none border-none">
             <img
               src="/myimg.jpg"
               alt=""
-              className="sm:h-[27rem] sm:w-[25rem] w-[12rem]  object-cover rounded-2xl"
+              className="sm:h-[27rem] sm:w-[25rem] w-auto  object-cover rounded-2xl"
             />
           </div>
 

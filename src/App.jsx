@@ -12,10 +12,10 @@ export default function App() {
     <Router>
       <section className=" bg-black  ">
         <div>
-          <div className="flex w-full  justify-between md:px-20 sm:px-10 px-7 md:py-5 sm:py-3 py-2 backdrop-blur-sm shadow-gray-500  text-white md:text-xl font-bold font-serif">
+          <div className="flex w-full  justify-between md:px-20 sm:px-10 px-7 md:py-6 sm:py-4 py-3 backdrop-blur-sm shadow-gray-500  text-white md:text-xl font-bold font-serif">
             <div>
               <Link to="/">
-                <p className="sm:text-lg text-sm">Prithviraj</p>
+                <p className="sm:text-lg text-lg">Prithviraj</p>
               </Link>
             </div>
             <div className="">

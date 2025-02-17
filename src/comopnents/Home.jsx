@@ -21,22 +21,22 @@ export default function Home() {
         <img
           src="/portimg.png"
           alt=""
-          className="absolute md:h-[47vw] sm:h-[70vw] h-[51.5vw]  w-full object-cover"
+          className="absolute md:h-[47vw] sm:h-[70vw] h-screen  w-full object-cover"
         />
       </div>
-      <div className="relative md:py-20 sm:py-14 py-5 md:px-20 sm:px-10 px-6 text-black">
-        <p className="md:text-4xl sm:text-xl text-xs  font-semibold">Hello, my name is</p>
+      <div className="relative md:py-20 sm:py-14 py-20 md:px-20 sm:px-10 px-2  text-black">
+        <p className="md:text-4xl sm:text-xl text-xl  font-semibold py-2">Hello, my name is</p>
         <TypeAnimation
-          className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-4xl"
+          className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-6xl"
           sequence={["Prithviraj", 2000, "", 2000, ""]}
           wrapper="span"
           speed={50}
           repeat={Infinity}
         />
-        <div className="flex items-center gap-2">
-          <p className="md:text-5xl sm:text-4xl text-sm text-white">And I'm a</p>
+        <div className="flex items-center gap-2 py-4">
+          <p className="md:text-5xl sm:text-4xl text-xl text-white">And I'm a</p>
           <TypeAnimation
-            className="text-red-600 md:text-5xl sm:text-4xl text-sm inline-block"
+            className="text-red-500 md:text-5xl sm:text-4xl text-xl inline-block font-bold"
             sequence={[
               "Fresher",
               2000,
@@ -50,10 +50,10 @@ export default function Home() {
             repeat={Infinity}
           />
         </div>
-        <div className="md:py-20 sm:py-8 py-5">
+        <div className="md:py-20 sm:py-8 pt-42">
 
         <StyledWrapper>
-      <button onClick={scrollToBottom}  className="btn mdxs:w-[10rem] sm:w-[8rem] w-[6rem] sm:text-lg text-xs  ">Hair me</button>
+      <button onClick={scrollToBottom}  className="btn mdxs:w-[10rem] sm:w-[8rem] w-[6rem] sm:text-lg text-xs ">Hair me</button>
     </StyledWrapper>
           
           

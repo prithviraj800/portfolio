@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 export default function Contact() {
   return (
-    <div className="md:py-20 sm:py-14 py-10 px-5 bg-black text-white">
-      <div className="grid grid-cols-2">
+    <div className="md:py-20 sm:py-14 py-10 px-5  bg-black text-white">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-5">
         {/* <div>
           <iframe
             className=" w-full md:h-[20rem] sm:h-[13rem]"
@@ -12,18 +12,18 @@ export default function Contact() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div> */}
-        <div className="md:px-10 sm:px-8 px-6 ">
-          <p className="font-bold  md:text-4xl sm:text-xl text-sm  md:py-10 sm:py-7 py-4">Contact Us</p>
-          <ul className="flex flex-col md:gap-5 sm:gap-2.5 md:text-2xl sm:text-lg text-xs ">
-            <li>Email : prithviraj8002131@gmail.com </li>
-            <li>Mobile : 8002131099</li>
-            <li>Location : Chandighar</li>
+        <div className="md:px-10 sm:px-8 ">
+          <p className="font-bold  md:text-4xl sm:text-xl text-lg md:py-10 sm:py-7 text-red-600 py-4">Contact Us</p>
+          <ul className="flex flex-col md:gap-5 sm:gap-2.5 md:text-2xl sm:text-lg text-xl ">
+            <li>Email-prithviraj8002131@gmail.com </li>
+            <li>Mobile-8002131099</li>
+            <li>Location-Chandighar</li>
           </ul>
         </div>
         <div>
-          <p className="font-bold  md:text-4xl sm:text-xl text-sm  md:py-10 sm:py-7 py-4">Social</p>
+          <p className="font-bold  md:text-4xl sm:text-xl text-lg text-red-600  md:py-10 sm:py-7 py-4">Social</p>
           <div className="flex  flex-col items-center">
-              {/* <StyledWrapper >
+              <StyledWrapper >
                 <div className="main ">
                   <div className="up">
                     <button className="card1">
@@ -77,7 +77,7 @@ export default function Contact() {
                     </button>
                   </div>
                 </div>
-              </StyledWrapper> */}
+              </StyledWrapper>
           </div>
         </div>
       </div>
@@ -105,8 +105,8 @@ const StyledWrapper = styled.div`
   }
 
   .card1 {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     outline: none;
     border: none;
     background: white;
@@ -117,14 +117,14 @@ const StyledWrapper = styled.div`
   }
 
   .whatsapp {
-    margin-top: 1.5em;
-    margin-left: 2em;
+    margin-top: 1.3em;
+    margin-left: 1.5em;
     fill: #00ff00;
   }
 
   .card2 {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     outline: none;
     border: none;
     background: white;
@@ -135,14 +135,14 @@ const StyledWrapper = styled.div`
   }
 
   .linkedin {
-    margin-top: 1.5em;
-    margin-left: 2em;
+    margin-top: 1.3em;
+    margin-left: 1.4em;
     fill: #0077b5;
   }
 
   .card3 {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     outline: none;
     border: none;
     background: white;
@@ -154,12 +154,12 @@ const StyledWrapper = styled.div`
 
   .github {
     margin-top: -0.6em;
-    margin-left: 2em;
+    margin-left: 1.5em;
   }
 
   .card4 {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     outline: none;
     border: none;
     background: white;
@@ -170,8 +170,8 @@ const StyledWrapper = styled.div`
   }
 
   .discord {
-    margin-top: -0.9em;
-    margin-left: 1.6em;
+    margin-top: -0.6em;
+    margin-left: 1em;
     fill: #8c9eff;
   }
 

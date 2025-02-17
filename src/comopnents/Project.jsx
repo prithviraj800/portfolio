@@ -85,7 +85,7 @@ export default function Project() {
           </a>
         </div>
       </div>
-      <p className="text-end  underline text-sm">Project Commingsoon --</p>
+      
     </div>
   );
 }
