@@ -21,10 +21,10 @@ export default function Home() {
         <img
           src="/portimg.png"
           alt=""
-          className="absolute md:h-[47vw] sm:h-[70vw] h-screen  w-full object-cover"
+          className="absolute md:h-[47vw] sm:h-[70vw] h-[126vw] w-full object-cover"
         />
       </div>
-      <div className="relative md:py-20 sm:py-14 py-20 md:px-20 sm:px-10 px-2  text-black">
+      <div className="relative md:py-20 sm:py-14 pt-20 md:px-20 sm:px-10 px-2  text-black">
         <p className="md:text-4xl sm:text-xl text-xl  font-semibold py-2">Hello, my name is</p>
         <TypeAnimation
           className="text-white font-semibold md:text-[6rem] sm:text-[4rem] text-6xl"
